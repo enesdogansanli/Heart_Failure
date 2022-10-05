@@ -115,7 +115,6 @@ def grab_col_names(dataframe, cat_th=10, car_th=20):
     """
 
     It gives the names of categorical, numerical and categorical but cardinal variables in the data set.
-    Not: Kategorik değişkenlerin içerisine numerik görünümlü kategorik değişkenler de dahildir.
 
     Parameters
     ------
