@@ -22,6 +22,15 @@ pd.set_option('display.width', 500)
 def check_df(dataframe, head=5):
     '''
     Provides general information about the loaded data.
+
+    Parameters
+    ----------
+    dataframe: dataframe
+    head: head
+
+    Notes
+    ----------
+    The head value is set to a constant 5.
     '''
     print("##################### Shape #####################")
     print(dataframe.shape)
@@ -35,6 +44,8 @@ def check_df(dataframe, head=5):
     print(dataframe.isnull().sum())
     print("##################### Quantiles #####################")
     print(dataframe.quantile([0, 0.05, 0.50, 0.95, 0.99, 1]).T)
+    print("##################### Corr #####################")
+    print(dataframe.corr())
 
 
 def cat_summary(dataframe, col_name, plot=False):
